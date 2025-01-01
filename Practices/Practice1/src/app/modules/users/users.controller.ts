@@ -7,7 +7,7 @@ export const createUser = async (req, res, next) => {
     const result = await createUserIntroDB(req.body);
     return sendResponse(res, {
       success: true,
-      statusCode: httpStatus.ok as number,
+      statusCode: httpStatus.OK,
       message: 'User created successfully',
       data: result,
     });
