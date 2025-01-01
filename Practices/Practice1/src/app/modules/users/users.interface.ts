@@ -1,8 +1,9 @@
 type TUser = {
-  uid: string
-  name: string
-  email: string
-  password: string
-}
+  uid: string;
+  name: string;
+  email: string;
+  password: string;
+  isDeleted: boolean;
+};
 
-export default TUser
+export default TUser;
