@@ -1,5 +1,5 @@
-import { model, Schema } from 'mongoose'
-import TUser from './users.interface'
+import { model, Schema } from 'mongoose';
+import TUser from './users.interface';
 
 const userSchema = new Schema<TUser>({
   uid: {
@@ -19,7 +19,12 @@ const userSchema = new Schema<TUser>({
     type: String,
     required: true,
   },
-})
+  isDeleted: {
+    type: Boolean,
+    required: true,
+    default: true,
+  },
+});
 
-const userModel = model('User', userSchema)
-export default userModel
+const userModel = model('User', userSchema);
+export default userModel;
