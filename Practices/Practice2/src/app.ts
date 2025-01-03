@@ -8,6 +8,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
+app.get('/vua', (req, res) => {
+  res.send('Hello World!');
+});
 
 app.use(globalErrorHandler);
 export default app;
