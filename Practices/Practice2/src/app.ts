@@ -14,7 +14,7 @@ app.get('/vua', (req, res) => {
 });
 
 app.get('/asholvua', (req, res) => {
-  res.send('Hello asfsaf!');
+  res.send('Hello asholvua!');
 });
 
 app.use(globalErrorHandler);
