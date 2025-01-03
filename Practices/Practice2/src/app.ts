@@ -8,8 +8,13 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
+
 app.get('/vua', (req, res) => {
   res.send('Hello World!');
+});
+
+app.get('/asholvua', (req, res) => {
+  res.send('Hello asfsaf!');
 });
 
 app.use(globalErrorHandler);
