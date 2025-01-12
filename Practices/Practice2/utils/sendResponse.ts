@@ -1,3 +1,3 @@
-export const sendResponse = (res) => {
+export const sendResponse = (res,req) => {
   return res;
 };
